@@ -10,8 +10,9 @@ def canny(image):
     return canny
 
 image = cv2.imread('test_image.jpg')
-cv2.imshow('result', canny(image))
-cv2.waitKey(0)
+#cv2.imshow('result', canny(image))
+plt.imshow(canny(image))
+plt.show()
 
 
 
